@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/img.png</file>
+        <file>img/flecha.png</file>
+        <file>img/salir.png</file>
+        <file>img/logo.png</file>
+        <file>img/agregar.png</file>
+        <file>img/editar.png</file>
+        <file>img/eliminar.png</file>
+        <file>img/buscar.png</file>
+    </qresource>
+</RCC>

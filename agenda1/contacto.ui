@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>969</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>961</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="buscar">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>40</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>BUSCAR UN CONTACTO</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tablacontacto">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>751</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+font: 10pt &quot;Louis George Café&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="background">
+        <color alpha="25">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Numero</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Correo electronico</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Cumpleaños</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Sexo</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Domicilio</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="agregar">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>120</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/agregar.png</normaloff>:/img/img/agregar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:#B7CBBF;
+	font: 20pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string>Lista de contactos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editarboton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>210</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/editar.png</normaloff>:/img/img/editar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="eliminarboton">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>320</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/eliminar.png</normaloff>:/img/img/eliminar.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>450</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/salir.png</normaloff>:/img/img/salir.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="perfil">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>462</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+	color:#6F6F6F;
+	font: 12pt &quot;Louis George Café&quot;;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string>Configurar mi perfil</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="grupos">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>460</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+	color:#6F6F6F;
+	font: 12pt &quot;Louis George Café&quot;;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ver grupos</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:#B7CBBF;
+	font: 20pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string>Tus grupos</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>70</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Familia</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>70</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Amigos </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>70</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Trabajo</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tablafamilia">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>291</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+font: 10pt &quot;Louis George Café&quot;;
+color: black;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Numero</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="tablaamigos">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>100</y>
+        <width>291</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+font: 10pt &quot;Louis George Café&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Numero</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="tablatrabajo">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>100</y>
+        <width>291</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+font: 10pt &quot;Louis George Café&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Numero</string>
+       </property>
+       <property name="foreground">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>153</red>
+          <green>102</green>
+          <blue>93</blue>
+         </color>
+        </brush>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="regresar">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>460</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/flecha.png</normaloff>:/img/img/flecha.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:#B7CBBF;
+	font: 20pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string>Editar contacto</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Nombre (s):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Apellido paterno:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Apellido materno:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>210</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Número:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>260</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Correo electronico:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>300</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Cumpleaños:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>410</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Sexo:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>460</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+
+</string>
+      </property>
+      <property name="text">
+       <string>Domicilio:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombrenuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>60</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="apnuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>110</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="amnuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>160</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numeronuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>210</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="correonuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>260</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cumplenuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>310</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sexonuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>410</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="domicilionuevo">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>460</y>
+        <width>301</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actualizar">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>450</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #F5DABD;
+ border-style: outset;
+    border-radius: 15px;
+font: 11pt &quot;Louis George Café&quot;;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }</string>
+      </property>
+      <property name="text">
+       <string>Actualizar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/flecha.png</normaloff>:/img/img/flecha.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>350</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Grupo:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="familia">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>350</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Familia</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="amigos">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>350</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Amigos</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="trabajo">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>350</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Trabajo</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:#B7CBBF;
+	font: 20pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string>Agregar contacto</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>270</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Correo electronico:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="agregarnuevo">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>410</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #F5DABD;
+ border-style: outset;
+    border-radius: 15px;
+font: 11pt &quot;Louis George Café&quot;;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }</string>
+      </property>
+      <property name="text">
+       <string>Agregar</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="apellidop">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>120</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Apellido materno:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+color:#99665D;
+background-color: rgba(255, 255, 255, 10);</string>
+      </property>
+      <property name="text">
+       <string>Nombre(s):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="correo">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>270</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>320</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Cumpleaños:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numero">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>220</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="apellidoma">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>170</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombre">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>70</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cumpleanios">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>320</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>120</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Apellido paterno:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>220</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Número:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>460</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/flecha.png</normaloff>:/img/img/flecha.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>370</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Sexo:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>415</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Domicilio:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sexo">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>370</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="domi">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>420</y>
+        <width>321</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	color:#B7CBBF;
+	font: 20pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+}</string>
+      </property>
+      <property name="text">
+       <string>Mi perfil</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Nombre (s):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>120</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Apellido paterno:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Apellido materno:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Número:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>240</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Número casa (opcional):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>280</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Correo eléctronico:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>320</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Cumpleaños:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>360</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Louis George Café&quot;;
+background-color: rgba(255, 255, 255, 10);
+color: #99665D
+</string>
+      </property>
+      <property name="text">
+       <string>Notas:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nombreusuario">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>80</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="apeusuario">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>120</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="amusuario">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>160</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numusuario">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>200</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numcasa">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>240</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="correousuario">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>280</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cumpleusuario">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>320</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="notas">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>360</y>
+        <width>341</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 1px solid; 
+border-radius: 10px;
+border-color: #f9a287;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="volver">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>460</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);
+border-radius: 10px;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="img.qrc">
+        <normaloff>:/img/img/flecha.png</normaloff>:/img/img/flecha.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guardar">
+      <property name="geometry">
+       <rect>
+        <x>684</x>
+        <y>390</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #F5DABD;
+ border-style: outset;
+    border-radius: 15px;
+font: 11pt &quot;Louis George Café&quot;;
+}
+
+QPushButton:Hover{
+	background-color: #B7CBBF;
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }</string>
+      </property>
+      <property name="text">
+       <string>Guardar</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>641</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color:#D1ACA4;
+	font: 75 20pt &quot;Quicksand Bold&quot;;
+background-color: rgba(255, 255, 255, 10);
+}</string>
+    </property>
+    <property name="text">
+     <string>AGENDA</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
